@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery html cycler demo</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="jquery.element.cycle.1.0.js"></script>
+    <style>
+        /*
+         * element to be cycled must be positioned absolutely,
+         * other styling unneccessary
+         */
+        div.element {
+            position: absolute;
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+
+        /* controls given some basic styling */
+        div#elementControls {
+            position: absolute;
+            top: 150px;
+        }
+        div#elementControls a {
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="elements">
+        <div class="element">
+            <h2>First heading</h2>
+            <p>Some text 1</p>
+        </div><!-- /element -->
+    </div><!-- /elements -->
+
+    <script>
+        $(document).ready(function() {
+
+            // add the controls via javascript
+            var controls = '<div id="elementControls">' +
+                '<a href="#" id="prev" title="previous">previous</a>' +
+                '<a href="#" id="next" title="next">next</a>' +
+                '</div>';
+            $('#elements').after(controls);
+
+            // start the cycler
+            $(document).cycle();
+        });
+    </script>
+    
+</body>
+</html>
