@@ -45,8 +45,8 @@
                 '</div>';
             $('#elements').after(controls);
 
-            // start the cycler
-            $(document).cycle();
+            // start the cycler with custom transition times
+            $(document).cycle({cycleTime:2000, transitionTime:2000});
         });
     </script>
     
