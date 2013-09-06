@@ -3,15 +3,6 @@
  * Licensed under Apache License Version 2.0, January 2004
  * See https://github.com/bathweb/jquery-html-cycler/blob/master/LICENSE
  *
- * Configuration options:
- * transitionTime - time to move from one element to the next on auto cycle (4000ms)
- * clickTransitionTime - time to move from one element to the next on manual cycle (500ms)
- * cycleTime: pause between auto transitions (6000ms)
- * elementsFile: name of file with elements (elements/elementlist.html)
- * elementContainer: identified for element container (#elements)
- * elementIdentifier: identified for element to cycle (.element)
- * forwardButton: identified for manual forward cycle button (#next)
- * backButton: identified for manual back cycle button (#prev)
  */
 
 (function( $ ){
