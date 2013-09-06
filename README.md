@@ -1,4 +1,4 @@
 jquery-html-cycler
 ==================
 
-Cycles html fragments.
+Cycles html fragments. 
